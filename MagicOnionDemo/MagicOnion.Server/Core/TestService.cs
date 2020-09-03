@@ -1,4 +1,5 @@
 ﻿using MagicOnion.Common.IService;
+using MagicOnion.Common.Model.Request;
 using MagicOnion.Common.Model.Response;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,24 @@ namespace MagicOnion.Server.Core
             Student student;
             student.Name = "Test_小明";
             student.Sid = sid;
+
+            //FillResult
+            TestResponse result = new TestResponse()
+            {
+                Data = student,
+                Status = 0,
+                Msg = "GRPC成功！"
+            };
+
+            //Return
+            return UnaryResult(result);
+        }
+
+        public UnaryResult<TestResponse> GetStudent(TestRequest request)
+        {
+            Student student;
+            student.Name = "Test_小明";
+            student.Sid = 1;
 
             //FillResult
             TestResponse result = new TestResponse()

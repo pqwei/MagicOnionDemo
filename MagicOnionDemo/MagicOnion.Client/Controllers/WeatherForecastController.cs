@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Grpc.Core;
-using MagicOnion.Common.IService;
+using MagicOnion.Common.Model.Request;
+using MagicOnion.Proxy.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -27,11 +28,10 @@ namespace MagicOnion.Client.Controllers
         [HttpGet]
         public string Get()
         {
-            // 然后你就可以根据IP和端口拿到对于的服务
-            var channel = new Channel("localhost", 8800, ChannelCredentials.Insecure);
-            var client = MagicOnionClient.Create<ITestService>(channel);
-            var reply = client.GetStudent(1);
-            return reply.GetAwaiter().GetResult().Msg;
+            var result = Provider.TestService.GetStudent(new TestRequest()).GetAwaiter();
+            var data = result.GetResult().Data;
+            var msg = result.GetResult().Msg;
+            return msg;
         }
     }
 }

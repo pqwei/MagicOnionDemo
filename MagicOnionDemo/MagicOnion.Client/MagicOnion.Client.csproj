@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MagicOnion.Common\MagicOnion.Common.csproj" />
+    <ProjectReference Include="..\MagicOnion.Proxy\MagicOnion.Proxy.csproj" />
   </ItemGroup>
 
 

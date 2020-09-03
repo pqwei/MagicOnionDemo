@@ -1,4 +1,5 @@
-﻿using MagicOnion.Common.Model.Response;
+﻿using MagicOnion.Common.Model.Request;
+using MagicOnion.Common.Model.Response;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -12,7 +13,7 @@ namespace MagicOnion.Common.IService
         /// </summary>
         /// <param name="sid">学生id</param>
         /// <returns>一个鲜活的学生</returns>
-        UnaryResult<TestResponse> GetStudent(int sid);
+        UnaryResult<TestResponse> GetStudent(TestRequest request);
     }
 
 }

@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicOnion.Server", "MagicO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicOnion.Client", "MagicOnion.Client\MagicOnion.Client.csproj", "{437983EB-A3AD-4363-82DB-EC2AF627AA1B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicOnion.Common", "MagicOnion.Common\MagicOnion.Common.csproj", "{5DC2871D-4B1D-4331-AC51-5D89041A65A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicOnion.Proxy", "MagicOnion.Proxy\MagicOnion.Proxy.csproj", "{42B9F152-F550-4A60-B80A-2D723400D0D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicOnion.Proxy", "MagicOnion.Proxy\MagicOnion.Proxy.csproj", "{42B9F152-F550-4A60-B80A-2D723400D0D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MagicOnion.Common", "MagicOnion.Common\MagicOnion.Common.csproj", "{430A6E89-5C6F-4528-BF6F-FC9F409A09AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{437983EB-A3AD-4363-82DB-EC2AF627AA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{437983EB-A3AD-4363-82DB-EC2AF627AA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{437983EB-A3AD-4363-82DB-EC2AF627AA1B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DC2871D-4B1D-4331-AC51-5D89041A65A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DC2871D-4B1D-4331-AC51-5D89041A65A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DC2871D-4B1D-4331-AC51-5D89041A65A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DC2871D-4B1D-4331-AC51-5D89041A65A1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42B9F152-F550-4A60-B80A-2D723400D0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42B9F152-F550-4A60-B80A-2D723400D0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42B9F152-F550-4A60-B80A-2D723400D0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42B9F152-F550-4A60-B80A-2D723400D0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430A6E89-5C6F-4528-BF6F-FC9F409A09AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430A6E89-5C6F-4528-BF6F-FC9F409A09AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430A6E89-5C6F-4528-BF6F-FC9F409A09AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430A6E89-5C6F-4528-BF6F-FC9F409A09AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
