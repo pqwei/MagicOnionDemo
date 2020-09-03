@@ -13,7 +13,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MagicOnion.Server.Extensions;
-using MagicOnion.Server.Middlewares;
 using MagicOnion.Server.Core;
 
 namespace MagicOnion.Server
